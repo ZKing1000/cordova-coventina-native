@@ -1,0 +1,26 @@
+{
+    "version": "1.0.1",
+    "name": "cordova-plugin-hello-c",
+    "cordova_name": "Hello C",
+    "description": "",
+    "author": "Dave Alden",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/dpa99c/cordova-plugin-hello-c.git"
+    },
+    "issue": "https://github.com/dpa99c/cordova-plugin-hello-c/issues",
+    "cordova": {
+        "id": "cordova-plugin-hello-c",
+        "platforms": [
+            "android",
+            "ios"
+        ]
+    },
+    "keywords": [
+        "ecosystem:cordova",
+        "cordova",
+        "android",
+        "ios"
+    ]
+}

@@ -1,0 +1,1 @@
+g++ -std=gnu++11 extra.cpp main.cpp screen.cpp shapes.cpp loop.cpp matrix.cpp Rope.cpp SoftBody.cpp opengl/opengl.cpp opengl/programs.cpp screens/GameScreen.cpp -o gameexec -I/usr/include/SDL2 -lSDL2 -lGL

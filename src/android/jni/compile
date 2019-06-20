@@ -1,0 +1,1 @@
+g++ -std=gnu++11 cpp/extra.cpp cpp/main.cpp cpp/screen.cpp cpp/shapes.cpp cpp/loop.cpp cpp/matrix.cpp cpp/opengl/opengl.cpp cpp/opengl/programs.cpp cpp/screens/GameScreen.cpp cpp/read.cpp -o gameexec -I/usr/include/SDL2 -lSDL2 -lSDL2_image -lGLU -L. /usr/lib/x86_64-linux-gnu/libGLESv2.so -g

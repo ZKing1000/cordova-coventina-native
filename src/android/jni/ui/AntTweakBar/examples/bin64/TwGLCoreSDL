@@ -1,0 +1,2 @@
+#!/bin/sh
+export LD_LIBRARY_PATH=`dirname $0`/../../lib ; $0.out

@@ -1,0 +1,77 @@
+
+todo:
+. bumpy floor terrain.
+  . generated floor-map
+  . never more than one unit high.  blocks embedded.
+. small temple
+. priest/bishop that tries to beat you with a staff when time is up.
+. shoot
+. shoot at boss
+. shoot at other player
+. add textures to blocks
+. soundtrack
+
+notes:
+. shoot
+ . Projectile
+  . FastProjectile  - left button
+  . HeavyProjectile - right button (or shift and left)
+    . calculate bounding box and bounding grid of Shapes, test projectile intersections
+. shoot at other player
+ . basic client/server networking
+
+ ---
+ holden:
+
+ . coins
+ . cuttlefish model
+ . ability to give the cuttlefish, or other creature, a tongue or appendage that moves independently
+
+ ---
+ . ritual
+  . two gods and you
+   . they are both angry with you, unless you worship one.
+     . then the one defends you against the other, for a little while.
+     . cuttlefish god.
+       . give coins to the cuttlefish to make him happy.
+       . rings (torus's) also (rings/ritual relationship)
+       . do cuttlefish have ritualistic behavior?  mating ritual?
+       . cuttlefish god up above alter to the cuttlefish (a wishing well?).
+       . you have to collect rings/coins quickly, and put them in the the well
+         (Coventina - goddess of wells and springs - name for the cuttlefish god? most ancient wishing well)
+	. put coins and rings in well in specific order to make goddess happy.
+	  . if you don't, her boyfriend hunts and tries to kill you?
+	  . if you make her happy, she gives you her sperm sack to put on a blade of grass.
+	  . perform task three times to win, within 2 minutes
+	. time: 2 minutes to complete task.
+	. 30 second countdown before boyfriend starts attacking.
+	. five health - if he hits you five times, you die.
+ 	. Coventina's Well:
+	  . a spring in a rectangular basin, 2.6m x 2.4m in the center of a walled enclosure,
+           11.6m x 12.2m within a wall 0.9m thick.  Archaelogists discovered 13487 coins in the well,
+	   from Mark Anthony to Gratian...
+
+  CubeMap:
+  . 1-999: cube, 1000: coin, 2000: ring
+  . one vector for coins, one for rings.
+
+ ---
+
+ . explain game in once sentence.
+ . complete game session (achieve goal or fail) in less than 2 minutes.
+ . Don't forget the sound!
+ . Sound and music is often overlooked in jam games, but it is an integral
+ component and greatly affects the perception of quality.
+ . "To come up with an idea to fit the THEME: write down the first five things
+ that come to mind, then toss 'em!"
+ . Key qualities that the most popular jam games have: humor, simple graphics,
+ simple controls (easy to pick up and play)
+ . Concentrate on the important parts of your game: movement, controls, a way
+ to "die", triggering a "win" state, the "feel".
+ . Save time: instead of hand-crafted levels, use procedural generation
+(fractals, random, etc.)
+ . What's obvious to you isn't to your players: get friends to playtest. Did
+ they "get it" immediately?
+
+
+

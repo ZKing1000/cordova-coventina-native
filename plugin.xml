@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin
+        xmlns="http://www.phonegap.com/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="cordova-plugin-hello-c"
+        version="1.0.1">
+
+  <name>Hello</name>
+
+  <engines>
+    <engine name="cordova" version=">=3.4.0"/>
+  </engines>
+
+  <asset src="www/helloc.js" target="js/helloc.js"/>
+
+  <js-module src="www/helloc.js" name="helloc">
+    <clobbers target="helloc" />
+  </js-module>
+
+  <platform name="android">
+
+    <!-- must be the same as APP_PLATFORM in Android.mk  -->
+    <edit-config file="AndroidManifest.xml" target="/manifest/uses-sdk" mode="merge">
+      <uses-sdk android:minSdkVersion="19" />
+    </edit-config>
+
+    <config-file target="app/src/main/res/xml/config.xml" parent="/*">
+      <feature name="HelloCPlugin">
+        <param name="android-package" value="com.example.HelloCPlugin"/>
+      </feature>
+    </config-file>
+
+    <!-- Java plugin API -->
+    <source-file src="src/android/HelloCPlugin.java" target-dir="app/src/main/java/com/example/"/>
+    <source-file src="src/android/HelloCJni.java" target-dir="app/src/main/java/com/example/" />
+
+    <!-- PRODUCTION - comment out source files below for debugging -->
+    <!-- Compiled C libraries -->
+    <source-file src="src/android/libs/arm64-v8a/libhelloc.so" target-dir="app/src/main/jniLibs/arm64-v8a/" />
+    <source-file src="src/android/libs/armeabi-v7a/libhelloc.so" target-dir="app/src/main/jniLibs/armeabi-v7a/" />
+    <source-file src="src/android/libs/x86/libhelloc.so" target-dir="app/src/main/jniLibs/x86/" />
+    <source-file src="src/android/libs/x86_64/libhelloc.so" target-dir="app/src/main/jniLibs/x86_64/" />
+    <!-- END PRODUCTION -->
+
+    <!-- DEBUG - these files are not needed for production -->
+    <!-- Custom gradle file to setup NDK for debugging -->
+    <source-file src="src/android/build-extras.gradle" target-dir="."/>
+
+    <!-- NDK Make file for source references for C debugging -->
+    <source-file src="src/android/jni/Android.mk" target-dir="app/src/main/java/c/android/jni/"/>
+
+    <!-- C source files -->
+    <source-file src="src/android/jni/HelloCJni.c" target-dir="app/src/main/java/c/android/jni/"/>
+
+    <source-file src="src/common/hello.h" target-dir="app/src/main/java/c/common/"/>
+    <source-file src="src/common/hello.c" target-dir="app/src/main/java/c/common/"/>
+
+    <source-file src="src/common/mylib/mylib.h" target-dir="app/src/main/java/c/common/mylib"/>
+    <source-file src="src/common/mylib/mylib.c" target-dir="app/src/main/java/c/common/mylib"/>
+    <source-file src="src/common/mylib/mycomponent.h" target-dir="app/src/main/java/c/common/mylib"/>
+    <source-file src="src/common/mylib/mycomponent.c" target-dir="app/src/main/java/c/common/mylib"/>
+    <source-file src="src/common/mylib/parts/mypart.h" target-dir="app/src/main/java/c/common/mylib/parts"/>
+    <source-file src="src/common/mylib/parts/mypart.c" target-dir="app/src/main/java/c/common/mylib/parts"/>
+    <!-- END DEBUG -->
+
+  </platform>
+
+  <platform name="ios">
+
+    <config-file target="config.xml" parent="/widget">
+      <feature name="HelloCPlugin">
+        <param name="ios-package" value="HelloCPlugin" />
+      </feature>
+    </config-file>
+
+    <!-- Objective-C plugin API -->
+    <header-file src="src/ios/HelloCPlugin.h" target-dir="HelloCPlugin"/>
+    <source-file src="src/ios/HelloCPlugin.m" target-dir="HelloCPlugin"/>
+
+    <!-- C source files -->
+    <header-file src="src/ios/c_getArch.h" target-dir="HelloCPlugin"/>
+    <source-file src="src/ios/c_getArch.c" target-dir="HelloCPlugin"/>
+
+    <header-file src="src/common/hello.h" target-dir="HelloCPlugin"/>
+    <source-file src="src/common/hello.c" target-dir="HelloCPlugin"/>
+
+    <!-- PRODUCTION - comment out source files below for debugging -->
+    <!-- Compiled C libraries -->
+    <source-file src="src/ios/libs/libmylib.a" framework="true" />
+    <!-- C header files -->
+    <header-file src="src/ios/libs/headers/mylib.h" target-dir="HelloCPlugin"/>
+    <header-file src="src/ios/libs/headers/mycomponent.h" target-dir="HelloCPlugin"/>
+    <header-file src="src/ios/libs/headers/mypart.h" target-dir="HelloCPlugin"/>
+    <!-- END PRODUCTION -->
+
+    <!-- DEBUG - these files are not needed for production - comment in for debugging -->
+    <!-- C source files -->
+    <!--<header-file src="src/common/mylib/mylib.h" target-dir="HelloCPlugin"/>-->
+    <!--<source-file src="src/common/mylib/mylib.c" target-dir="HelloCPlugin"/>-->
+    <!--<header-file src="src/common/mylib/mycomponent.h" target-dir="HelloCPlugin"/>-->
+    <!--<source-file src="src/common/mylib/mycomponent.c" target-dir="HelloCPlugin"/>-->
+    <!--<header-file src="src/common/mylib/parts/mypart.h" target-dir="HelloCPlugin"/>-->
+    <!--<source-file src="src/common/mylib/parts/mypart.c" target-dir="HelloCPlugin"/>-->
+    <!-- END DEBUG -->
+
+
+  </platform>
+</plugin>

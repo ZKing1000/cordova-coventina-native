@@ -1,0 +1,31 @@
+
+ === Coventina ===
+
+ - Game Jam 2016 -
+
+Description:
+
+Coventina is the goddess of wells and springs.  Coventina's Well is the
+original Wishing Well, dating back about 2000 years, to the Romano-British era.
+
+Coins are religious offerings to the goddess Coventina.  As a worshipper of
+Coventina, you ritualistically give coin offerings to Coventina, and rings too,
+because rings are nice, and Coventina likes to take the form of a Cuttlefish,
+because why not?  Cuttlefish are amazing and smart, and they're brains are
+ring-shaped.  So rings are special to the worshippers of Coventina.
+
+As a devout follower of Coventina, you follow a very specific ritual when you
+leave the temple and visit the well.  Coventina expects you to, and will be
+angry if you don't.  To make Coventina (and yourself) happy after a session of
+solemn worship, you make multiple offerings of two coins and one ring by
+dropping them in the well above which Coventina (in her abstract swimming
+cuttlefish form) floats.  But don't approach the well with more than two coins and one
+ring, because you will be compelled to offer them all, yet only get credit for
+the three.
+
+Gameplay:
+You win the game if you get 6 points.
+Each time you approach the well water and have at least 2 coins and 1 ring, you get one point.
+You have 90 seconds to make the 6 offerings.
+If you run out of time, you lose.
+
