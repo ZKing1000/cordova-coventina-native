@@ -1,26 +1,24 @@
 {
     "version": "1.0.1",
-    "name": "cordova-plugin-hello-c",
-    "cordova_name": "Hello C",
+    "name": "cordova-coventina-native",
+    "cordova_name": "Coventina Native",
     "description": "",
-    "author": "Dave Alden",
-    "license": "MIT",
+    "author": "Holden Green",
+    "license": "Eclipse",
     "repository": {
         "type": "git",
-        "url": "https://github.com/dpa99c/cordova-plugin-hello-c.git"
+        "url": "https://github.com/ZKing1000/cordova-coventina-native"
     },
-    "issue": "https://github.com/dpa99c/cordova-plugin-hello-c/issues",
+    "issue": "https://github.com/ZKing1000/cordova-coventina-native/issues",
     "cordova": {
-        "id": "cordova-plugin-hello-c",
+        "id": "cordova-coventina-native",
         "platforms": [
-            "android",
-            "ios"
+            "android"
         ]
     },
     "keywords": [
         "ecosystem:cordova",
         "cordova",
-        "android",
-        "ios"
+        "android"
     ]
 }

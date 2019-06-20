@@ -1,19 +1,9 @@
-cordova-plugin-hello-c
+cordova-coventina-native
 ======================
 
-A simple example of a Cordova plugin that uses pure C code.
-
-It illustrates how to use platform-specific (either Android or iOS) C code and how to share C code cross-platform (between Android and iOS).
-
-For Android it utilizes the Android NDK to compile architecture-specific libraries and a JNI wrapper to expose the C functions to the Java plugin API.
-
-For iOS it uses the pure C source code in place alongside the Objective-C plugin wrapper, as well as an example cross-platform library compiled as a static library for iOS.
+Cordova Native Code for Coventina
 
 # usage example
-
-- Clone the [test project](https://github.com/dpa99c/cordova-plugin-hello-c-test)
-- Add Android and iOS platforms: `cordova platform add android && cordova platform add ios`
-- Run: `cordova run android` / `cordova run ios`
 
 # Plugin structure
 
